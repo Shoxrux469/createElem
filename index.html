@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <style>
+        .item {
+            user-select: none;
+        }
+
+        .item .top span {
+            cursor: pointer;
+        }
+
+        .box {
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border: 3px solid rgb(167, 167, 167);
+            border-radius: 10px;
+            width: 300px;
+            height: 230px;
+            display: none;
+            transition: 1s;
+        }
+        .active{
+            display: flex !important;
+        }
+
+        .inp {
+            width: fit-content;
+        }
+
+        .btns {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btns button {
+            width: 100%;
+            padding: 15px 17px;
+            color: white;
+        }
+
+        .btns button:nth-child(1) {
+            border-radius: 8px;
+            padding: 15px 17px;
+            background-color: red;
+        }
+
+        .btns button:nth-child(2) {
+            border-radius: 8px;
+            padding: 15px 17px;
+            background-color: rgb(24, 206, 24);
+        }
+        .mainDiv{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <form name="todo">
+        <input type="text" name="title">
+        <button type="submit">add</button>
+    </form>
+    <div class="box">
+        <input class="inp" type="text">
+        <div class="btns">
+            <button class="cancel">Отменить</button>
+            <button class="change">Изменить</button>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
