@@ -18,7 +18,8 @@ let todos = [
   },
 ];
 
-form.onsubmit = (e) => {
+
+ form.onsubmit = (e) => {q
   e.preventDefault();
   console.log(todos);
   let todo = {
