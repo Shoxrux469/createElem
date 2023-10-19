@@ -15,6 +15,7 @@ let todos = [
     title: "task 2",
     time: new Date().getHours() + ":" + new Date().getMinutes(),
     isDone: false,
+    
   },
 ];
 
